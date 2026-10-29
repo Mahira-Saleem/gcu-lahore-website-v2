@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Government College University Lahore | Courage to Know</title>
+  <meta name="description" content="Government College University Lahore — one of South Asia's oldest seats of learning, est. 1864. Programs, admissions, news and campus life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__crest">GCU</div>
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="brand" aria-label="GCU Lahore home">
+        <span class="brand__mark">GC</span>
+        <span class="brand__text">GCU Lahore<small>Est. 1864</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#programs" class="nav__link">Programs</a></li>
+          <li><a href="#news" class="nav__link">News</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" id="heroBg" role="img" aria-label="Gothic clock tower of GCU Lahore main building"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Lahore · Since 1864</p>
+        <h1 class="hero__title">Courage to Know.</h1>
+        <p class="hero__text">Over 160 years of scholarship beneath the Gothic tower on Katchery Road — home to two Nobel laureates, national leaders and generations of Ravians.</p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--gold">Apply for Admission</a>
+          <a href="#programs" class="btn btn--ghost">Explore Programs</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">↓</a>
+    </section>
+
+    <!-- 2. About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=900&q=70&auto=format" alt="Students walking past a historic university building" loading="lazy" />
+          <div class="about__badge"><strong>160+</strong><span>years of legacy</span></div>
+        </div>
+        <div class="about__body">
+          <p class="eyebrow reveal">Our Story</p>
+          <h2 class="section__title reveal">A seat of learning older than the nation it helped build</h2>
+          <p class="reveal">Founded on 1 January 1864 under Dr. G. W. Leitner, Government College began in a haveli of Raja Dhian Singh before moving to its iconic Gothic building in 1877. It was granted university status in 2002 and today serves over 14,000 students across science, humanities and the arts.</p>
+          <div class="mv">
+            <article class="mv__card reveal">
+              <h3>Mission</h3>
+              <p>To nurture inquisitive, ethical and courageous minds through rigorous teaching, research and service to Pakistan.</p>
+            </article>
+            <article class="mv__card reveal">
+              <h3>Vision</h3>
+              <p>To be a globally recognised research university rooted in its heritage and committed to the public good.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Stats -->
+    <section class="stats" aria-label="University in numbers">
+      <div class="container stats__grid">
+        <div class="stat"><span class="stat__num" data-target="14000">0</span><span class="stat__label">Students</span></div>
+        <div class="stat"><span class="stat__num" data-target="160">0</span><span class="stat__label">Years of Excellence</span></div>
+        <div class="stat"><span class="stat__num" data-target="650">0</span><span class="stat__label">Faculty Members</span></div>
+        <div class="stat"><span class="stat__num" data-target="45">0</span><span class="stat__label">Departments</span></div>
+      </div>
+    </section>
+
+    <!-- 3. Programs -->
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Academics</p>
+          <h2 class="section__title">Programs & Faculties</h2>
+        </div>
+        <div class="toolbar">
+          <label for="programSearch" class="sr-only">Search programs</label>
+          <input type="search" id="programSearch" class="input" placeholder="Search programs, e.g. Physics, BS, MPhil…" />
+          <div class="chips" id="programFilters" role="group" aria-label="Filter by level"></div>
+        </div>
+        <div class="grid grid--3" id="programGrid" aria-live="polite"></div>
+        <p class="empty" id="programEmpty" hidden>No programs match your search.</p>
+      </div>
+    </section>
+
+    <!-- 5. Facilities & Achievements -->
+    <section class="section section--alt" id="facilities">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Campus & Pride</p>
+          <h2 class="section__title">Facilities & Achievements</h2>
+        </div>
+        <div class="grid grid--4" id="facilityGrid"></div>
+      </div>
+    </section>
+
+    <!-- 6. News -->
+    <section class="section" id="news">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">What's Happening</p>
+          <h2 class="section__title">News & Events</h2>
+        </div>
+        <div class="chips chips--center" id="newsFilters" role="group" aria-label="Filter news by category"></div>
+        <div class="grid grid--3" id="newsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="section section--dark" id="testimonials" aria-roledescription="carousel" aria-label="Testimonials">
+      <div class="container testimonials">
+        <p class="eyebrow eyebrow--gold">Voices of Ravians</p>
+        <div class="slider" id="slider">
+          <div class="slider__track" id="sliderTrack"></div>
+        </div>
+        <div class="slider__controls">
+          <button class="icon-btn icon-btn--light" id="prevSlide" aria-label="Previous testimonial">←</button>
+          <div class="slider__dots" id="sliderDots"></div>
+          <button class="icon-btn icon-btn--light" id="nextSlide" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Campus Life</p>
+          <h2 class="section__title">Gallery</h2>
+        </div>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Previous image">‹</button>
+      <figure>
+        <img id="lbImg" src="" alt="" />
+        <figcaption id="lbCaption"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Next image">›</button>
+    </div>
+
+    <!-- 9. FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <p class="eyebrow">Questions</p>
+          <h2 class="section__title">Frequently Asked</h2>
+        </div>
+        <div class="accordion" id="faqList"></div>
+      </div>
+    </section>
+
+    <!-- 10. Contact -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2 class="section__title">Admissions & Enquiries</h2>
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input class="input" id="name" name="name" type="text" autocomplete="name" />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone (Pakistan)</label>
+              <input class="input" id="phone" name="phone" type="tel" placeholder="+92 300 1234567 or 0300-1234567" />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="program">Program of interest</label>
+              <select class="input" id="program" name="program"><option value="">General enquiry</option></select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea class="input" id="message" name="message" rows="4"></textarea>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <p class="form__success" id="formSuccess" role="status" hidden></p>
+          </form>
+        </div>
+        <div class="contact__side">
+          <div class="map">
+            <iframe title="Map of GCU Lahore" src="https://www.google.com/maps?q=Government+College+University+Lahore&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <ul class="contact__info">
+            <li><strong>Address</strong> Katchery Road, Lahore 54000, Punjab, Pakistan</li>
+            <li><strong>Phone</strong> <a href="tel:+924299213340">+92 42 9921 3340</a></li>
+            <li><strong>Email</strong> <a href="mailto:info@gcu.edu.pk">info@gcu.edu.pk</a></li>
+            <li><strong>Hours</strong> Mon–Fri, 8:30 AM – 4:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="brand brand--light"><span class="brand__mark">GC</span><span class="brand__text">GCU Lahore<small>Courage to Know</small></span></a>
+        <p class="footer__about">A public research university in the heart of Lahore, educating Pakistan since 1864.</p>
+        <div class="social">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="https://x.com" aria-label="X (Twitter)" target="_blank" rel="noopener">𝕏</a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">◎</a>
+          <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">▶</a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#about">About</a></li><li><a href="#programs">Programs</a></li><li><a href="#news">News</a></li><li><a href="#contact">Admissions</a></li></ul>
+      </div>
+      <div>
+        <h4>Students</h4>
+        <ul><li><a href="#facilities">Library</a></li><li><a href="#facilities">Hostels</a></li><li><a href="#faq">Scholarships</a></li><li><a href="#gallery">Societies</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li>Katchery Road, Lahore</li><li><a href="tel:+924299213340">+92 42 9921 3340</a></li><li><a href="mailto:info@gcu.edu.pk">info@gcu.edu.pk</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Government College University Lahore. Concept redesign.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
